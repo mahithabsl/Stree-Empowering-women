@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="css/logincss.css">
+    <style type="text/css">
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li img{
+    height: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding : 20px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #FB2525;
+}
+
+li {
+    float: left;
+}
+</style>
+<body>
+    <div class="nav">
+    <ul>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="news.php">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li style="float:right"><h1><a href="index.php">STREE</a></h1></li>
+    </ul>
+    </div>
+
+
+
+    <div class="loginbox">
+    <img src="images/avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form action="login_form.php" method="post">
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="submit" value="Login">
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>
